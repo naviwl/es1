@@ -1,0 +1,6 @@
+
+
+docker build -t i-es:3 .
+
+
+docker run --name es3 -d -p 1234:9200 -p 5601:5601 i-es:3 /start.sh
